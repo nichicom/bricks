@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class {{name.pascalCase()}}PageAppBar extends HookConsumerWidget {
+class {{name.pascalCase()}}PageAppBar extends StatelessWidget
+    implements PreferredSizeWidget {
   const {{name.pascalCase()}}PageAppBar({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Size get preferredSize => AppBar().preferredSize;
+
+  @override
+  Widget build(BuildContext context) {
     return AppBar(
       title: const Text('{{name.pascalCase()}}'),
     );
