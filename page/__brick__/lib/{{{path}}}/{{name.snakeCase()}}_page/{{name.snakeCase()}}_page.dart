@@ -7,6 +7,8 @@ import 'components/{{name.snakeCase()}}_page_body.dart';
 class {{name.pascalCase()}}Page extends HookConsumerWidget {
   const {{name.pascalCase()}}Page({Key? key}) : super(key: key);
 
+  static const routeName = '{{name.snakeCase()}}';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return const Scaffold(
