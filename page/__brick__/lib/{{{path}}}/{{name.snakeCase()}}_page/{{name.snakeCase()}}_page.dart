@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'components/{{name.snakeCase()}}_page_app_bar.dart';
 import 'components/{{name.snakeCase()}}_page_body.dart';
 
-class {{name.pascalCase()}}Page extends ConsumerWidget {
-  const {{name.pascalCase()}}Page({super.key});
+class {{name.pascalCase()}}Page extends HookConsumerWidget {
+  const {{name.pascalCase()}}Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
