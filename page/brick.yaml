@@ -19,7 +19,7 @@ vars:
   path:
     type: string
     description: Directory path to page
-    default: lib/ui/pages
+    default: ui/pages
     prompt: What is the directory path to the page?
   name:
     type: string
