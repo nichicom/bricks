@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:themes/themes.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class {{name.pascalCase()}}PageAppBar extends HookConsumerWidget {
   const {{name.pascalCase()}}PageAppBar({Key? key}) : super(key: key);
-
-  @override
-  Size get preferredSize => AppBar().preferredSize;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
