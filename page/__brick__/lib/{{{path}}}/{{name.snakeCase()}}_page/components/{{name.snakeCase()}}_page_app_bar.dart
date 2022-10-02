@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:themes/themes.dart';
 
-class {{name.pascalCase()}}PageAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const {{name.pascalCase()}}PageAppBar({super.key});
+class {{name.pascalCase()}}PageAppBar extends HookConsumerWidget {
+  const {{name.pascalCase()}}PageAppBar({Key? key}) : super(key: key);
 
   @override
   Size get preferredSize => AppBar().preferredSize;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return AppBar(
-      title: Text('{{name.pascalCase()}}'),
+      title: const Text('{{name.pascalCase()}}'),
     );
   }
 }
